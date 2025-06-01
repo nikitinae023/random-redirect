@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Рандомный редирект</title>
+    <script>
+        // Список ссылок, на которые будет перенаправление
+        const links = [
+            "https://onlinetestpad.com/lpdooyk4kstm4",       // Первая ссылка
+            "https://onlinetestpad.com/mwrutvghmk5iy",      // Вторая ссылка
+        ];
+
+        // Функция для случайного выбора ссылки
+        function redirectRandomly() {
+            const randomIndex = Math.floor(Math.random() * links.length);
+            window.location.href = links[randomIndex];
+        }
+    </script>
+</head>
+<body onload="redirectRandomly()">
+    <p>Идёт перенаправление...</p>
+</body>
+</html>
